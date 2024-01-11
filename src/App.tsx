@@ -1,7 +1,12 @@
+import { Route, Routes } from "react-router-dom";
+import MainLayout from "./pages/layout/MainLayout";
+
 function App() {
   return (
     <>
-      <h1 className="bg-yellow-500">hello</h1>
+      <Routes>
+        <Route path="/" element={<MainLayout />} />
+      </Routes>
     </>
   );
 }
