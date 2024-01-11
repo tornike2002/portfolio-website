@@ -3,9 +3,12 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      colors:{
-        navPrimary: "#607b96"
-      }
+      colors: {
+        navPrimary: "#607b96",
+      },
+      fontFamily: {
+        Fira: ["Fira Code", "monospace"],
+      },
     },
   },
   plugins: [],
