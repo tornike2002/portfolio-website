@@ -3,7 +3,7 @@ import NavbarPage from "../navbar/NavbarPage";
 
 const MainLayout: React.FC = () => {
   return (
-    <div>
+    <div className="min-h-screen max-w-full p-11 m-auto">
       <NavbarPage/>
     </div>
   );
