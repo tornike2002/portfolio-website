@@ -1,11 +1,13 @@
 import HeaderImages from "./HeaderImages";
-
+import HeaderBackground from "../../assets/background/bg-main-desktop.png";
 const Header: React.FC = () => {
   return (
-    <div className="min-h-[80vh] text-white bg-MainPrimary flex justify-around items-center">
-      <div
-        className=" bg-MainPrimary gap-10 flex flex-col"
-      >
+    <div
+      className="min-h-[80vh] text-white bg-MainPrimary flex justify-around items-center bg-no-repeat
+      bg-cover bg-center"
+      style={{ backgroundImage: `url(${HeaderBackground})` }}
+    >
+      <div className="gap-10 flex flex-col">
         <div className="flex flex-col gap-2 justify-center">
           <p className="text-lg font-normal text-white font-Fira">
             Hi all. I am
