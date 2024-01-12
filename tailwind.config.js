@@ -6,6 +6,9 @@ export default {
       colors: {
         navPrimary: "#607b96",
         NavBorderColor: "#1e2d3d",
+        codeBlue: "#4d5bce",
+        codeGreen: "#43d9ad",
+        codeRed: "#e99287",
       },
       backgroundColor: {
         MainPrimary: "#011627",
