@@ -16,8 +16,11 @@ const Header: React.FC = () => {
           // find my profile on Github:
         </p>
         <h1>
-          <span className="text-codeBlue font-Fira font-bold text-base">const</span> <span>githubLink</span> =
-          <span>https://github.com/beqa200</span>
+          <span className="text-codeBlue font-Fira font-bold text-base">
+            const
+          </span>
+          <span className="font-Fira text-base font-medium text-codeGreen">githubLink</span> =
+          <span className="font-Fira text-base font-medium">https://github.com/beqa200</span>
         </h1>
       </div>
     </div>
