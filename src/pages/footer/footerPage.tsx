@@ -1,4 +1,4 @@
-import { Footer } from "antd/es/layout/layout";
+import Footer from "../../components/footer/Footer";
 
 const footerPage: React.FC = () => {
   return <Footer />;

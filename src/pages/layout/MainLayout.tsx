@@ -1,7 +1,7 @@
 import React from "react";
 import NavbarPage from "../navbar/NavbarPage";
 import Header from "../../components/header/Header";
-import { Footer } from "antd/es/layout/layout";
+import Footer from "../../components/footer/Footer";
 
 const MainLayout: React.FC = () => {
   return (
