@@ -1,4 +1,8 @@
-import { FacebookFilled, LinkedinFilled } from "@ant-design/icons";
+import {
+  FacebookFilled,
+  LinkedinFilled,
+  GithubFilled,
+} from "@ant-design/icons";
 
 const Footer: React.FC = () => {
   return (
@@ -24,6 +28,14 @@ const Footer: React.FC = () => {
         >
           <LinkedinFilled className="text-2xl text-navPrimary opacity-40" />
         </a>
+        <div>
+          <a href="#">
+            tornike2002
+            <span>
+              <GithubFilled />
+            </span>
+          </a>
+        </div>
       </div>
     </div>
   );
