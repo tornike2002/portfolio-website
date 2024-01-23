@@ -1,5 +1,5 @@
 import AboutAside from "../../components/about/AboutAside";
-import AboutSecondNav from "../../components/about/aboutSecondNav";
+import AboutSecondNav from "../../components/about/AboutSecondNav";
 import Footer from "../../components/footer/Footer";
 import NavbarPage from "../navbar/NavbarPage";
 
