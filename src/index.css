@@ -13,5 +13,5 @@ body {
 }
 
 .active-navlink a.active {
-  color: red;
+  color: rgb(254, 165, 95);
 }
