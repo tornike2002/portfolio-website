@@ -22,8 +22,8 @@ const AboutAside: React.FC = () => {
         className="text-white font-Fira border border-NavBorderColor w-[25%]
        min-h-[80vh] bg-MainPrimary"
       >
-        <div className="pl-4 border-b border-NavBorderColor ">
-          <h1 className="p-5">_about-me</h1>
+        <div className="border-b border-NavBorderColor ">
+          <h1 className="p-5 font-medium">_about-me</h1>
         </div>
         <div className="flex flex-col gap-2">
           <span
