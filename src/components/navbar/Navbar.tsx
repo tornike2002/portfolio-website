@@ -20,13 +20,13 @@ const Navbar = () => {
             _hello
           </Link>
           <Link
-            to="/"
+            to="/about"
             className="border-r border-NavBorderColor pr-8 h-full pt-4"
           >
             _about_me
           </Link>
           <Link
-            to=""
+            to="/projects"
             className="border-r border-NavBorderColor pr-8 h-full pt-4"
           >
             _projects
@@ -34,7 +34,7 @@ const Navbar = () => {
         </div>
         <div className="">
           <Link
-            to="/"
+            to="/contact"
             className="pr-4 pl-4 border-l border-NavBorderColor min-h-full "
           >
             _contact_me
