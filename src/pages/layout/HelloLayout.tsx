@@ -1,9 +1,8 @@
-import React from "react";
-import NavbarPage from "../navbar/NavbarPage";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
+import NavbarPage from "../navbar/NavbarPage";
 
-const MainLayout: React.FC = () => {
+const HelloLayout: React.FC = () => {
   return (
     <div className="min-h-screen max-w-full p-11 m-auto">
       <NavbarPage />
@@ -13,4 +12,4 @@ const MainLayout: React.FC = () => {
   );
 };
 
-export default MainLayout;
+export default HelloLayout;
