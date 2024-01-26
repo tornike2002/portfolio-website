@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Fragment, useState } from "react";
 import {
   DownOutlined,
@@ -7,19 +8,37 @@ import {
   PhoneOutlined,
   UpOutlined,
 } from "@ant-design/icons";
+import { useRecoilState } from "recoil";
+import { recoilPersonal, recoilProfessional } from "../recoilstate/state";
+
 const AboutAside: React.FC = () => {
   const [chivToggle, setChivToggle] = useState<boolean>(false);
   const [conChivToggle, setConChivToggle] = useState<boolean>(false);
+
+  const [aboutPersonalToggel, setAboutPersonalToggle] =
+    useRecoilState<boolean>(recoilPersonal);
+  const [aboutProffToggle, setAboutProffToggle] =
+    useRecoilState<boolean>(recoilProfessional);
   const infoChivToggle = () => {
     setChivToggle((value) => !value);
   };
   const conChivTogglehandler = () => {
     setConChivToggle((value) => !value);
   };
+  const aboutPerToggle = () => {
+    setAboutPersonalToggle(true);
+    setAboutProffToggle(false);
+  };
+  console.log(aboutPersonalToggel);
+  const aboutProfToggle = () => {
+    setAboutProffToggle(true);
+    setAboutPersonalToggle(false);
+  };
+  console.log(aboutProffToggle);
   return (
     <Fragment>
       <aside
-        className="text-white font-Fira border border-NavBorderColor w-[25%]
+        className="text-white font-Fira border border-NavBorderColor min-w-[25%]
        min-h-[80vh] bg-MainPrimary"
       >
         <div className="border-b border-NavBorderColor ">
@@ -39,11 +58,17 @@ const AboutAside: React.FC = () => {
           </span>
           {chivToggle && (
             <div className="flex flex-col items-start pl-7 cursor-pointer tracking-wider">
-              <span className="flex items-center gap-2 font-bold">
+              <span
+                className="flex items-center gap-2 font-bold"
+                onClick={aboutPerToggle}
+              >
                 <CaretDownOutlined className="cursor-pointer" />
                 <FolderOutlined className="cursor-pointer" /> Personal
               </span>
-              <span className="flex items-center gap-2 cursor-pointer font-bold tracking-wider">
+              <span
+                className="flex items-center gap-2 cursor-pointer font-bold tracking-wider"
+                onClick={aboutProfToggle}
+              >
                 <CaretDownOutlined className="cursor-pointer" />
                 <FolderOutlined className="cursor-pointer" /> Proffesional
               </span>
