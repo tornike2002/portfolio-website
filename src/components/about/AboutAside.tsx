@@ -29,10 +29,12 @@ const AboutAside: React.FC = () => {
     setAboutPersonalToggle(true);
     setAboutProffToggle(false);
   };
+  console.log(aboutPersonalToggel);
   const aboutProfToggle = () => {
     setAboutProffToggle(true);
     setAboutPersonalToggle(false);
   };
+  console.log(aboutProffToggle);
   return (
     <Fragment>
       <aside
