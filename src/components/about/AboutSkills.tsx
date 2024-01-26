@@ -12,29 +12,37 @@ import netlifyLogo from "../../assets/skills/netlify.png";
 import sassLogo from "../../assets/skills/sass.webp";
 import viteLogo from "../../assets/skills/vite.svg.png";
 import bootLogo from "../../assets/skills/bootstrap-logo.png";
+import AboutCvDownload from "./AboutCvDownload";
 const AboutSkills: React.FC = () => {
   return (
     <div
       className="bg-MainPrimary flex flex-col justify-center items-center gap-5 border-r
      border-NavBorderColor"
     >
-      <h1 className="text-white font-bolld text-4xl text-center">SKILLS</h1>
-      <div className="flex flex-wrap gap-4 items-center justify-center w-[40%]">
-        <img className="w-[50px]" src={htmlLogo} alt="" />
-        <img className="w-[50px]" src={cssLogo} alt="" />
-        <img className="w-[50px]" src={windCss} alt="" />
-        <img className="w-[50px]" src={reactLogo} alt="" />
-        <img className="w-[50px]" src={styledComponents} alt="" />
-        <img className="w-[50px]" src={jsLogo} alt="" />
-        <img className="w-[50px]" src={tsLogo} alt="" />
-        <img className="w-[50px]" src={gitLogo} alt="" />
-        <img className="w-[50px]" src={restApiLogo} alt="" />
-        <img className="w-[50px]" src={recoilJs} alt="" />
-        <img className="w-[50px]" src={netlifyLogo} alt="" />
-        <img className="w-[50px]" src={sassLogo} alt="" />
-        <img className="w-[50px]" src={viteLogo} alt="" />
-        <img className="w-[50px]" src={bootLogo} alt="" />
+      <h1 className="text-codeBlue font-bold text-4xl text-center tracking-wider">
+        Skills
+      </h1>
+      <div className="flex flex-wrap gap-10 items-center justify-center w-[80%]">
+        <img className="w-[50px] cursor-pointer" src={htmlLogo} alt="" />
+        <img className="w-[50px] cursor-pointer" src={cssLogo} alt="" />
+        <img className="w-[50px] cursor-pointer" src={windCss} alt="" />
+        <img className="w-[50px] cursor-pointer" src={reactLogo} alt="" />
+        <img
+          className="w-[50px] cursor-pointer"
+          src={styledComponents}
+          alt=""
+        />
+        <img className="w-[50px] cursor-pointer" src={jsLogo} alt="" />
+        <img className="w-[50px] cursor-pointer" src={tsLogo} alt="" />
+        <img className="w-[50px] cursor-pointer" src={gitLogo} alt="" />
+        <img className="w-[50px] cursor-pointer" src={restApiLogo} alt="" />
+        <img className="w-[50px] cursor-pointer" src={recoilJs} alt="" />
+        <img className="w-[50px] cursor-pointer" src={netlifyLogo} alt="" />
+        <img className="w-[50px] cursor-pointer" src={sassLogo} alt="" />
+        <img className="w-[50px] cursor-pointer" src={viteLogo} alt="" />
+        <img className="w-[50px] cursor-pointer" src={bootLogo} alt="" />
       </div>
+      <AboutCvDownload />
     </div>
   );
 };
