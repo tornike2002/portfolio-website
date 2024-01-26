@@ -1,4 +1,5 @@
 import AboutAside from "../../components/about/AboutAside";
+import AboutPersonal from "../../components/about/AboutPersonal";
 import AboutSecondNav from "../../components/about/AboutSecondNav";
 import Footer from "../../components/footer/Footer";
 import NavbarPage from "../navbar/NavbarPage";
@@ -9,7 +10,10 @@ const AboutLayout: React.FC = () => {
       <NavbarPage />
       <div className="flex">
         <AboutAside />
-        <AboutSecondNav />
+        <div className="flex flex-col">
+          <AboutSecondNav />
+          <AboutPersonal />
+        </div>
       </div>
       <Footer />
     </div>
