@@ -1,5 +1,8 @@
 import { CloseOutlined } from "@ant-design/icons";
+import { recoilPersonal } from "../recoilstate/state";
+import { useRecoilValue } from "recoil";
 const AboutSecondNav: React.FC = () => {
+  const aboutPersonalToggle = useRecoilValue(recoilPersonal);
   return (
     <div
       className="w-full bg-MainPrimary border-b border-b-NavBorderColor border-r
@@ -10,7 +13,7 @@ const AboutSecondNav: React.FC = () => {
           className="font-Fira font-medium text-navPrimary p-4 border-r border-r-NavBorderColor
         cursor-pointer flex items-center gap-4"
         >
-          personal
+          {aboutPersonalToggle ? "personal" : "professional"}
           <CloseOutlined className="text-xs" />
         </h1>
       </div>

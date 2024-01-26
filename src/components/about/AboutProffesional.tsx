@@ -4,17 +4,17 @@ const AboutProffesional: React.FC = () => {
       <h1 className="text-navPrimary text-base">
         <span className="text-white font-medium">// info </span> / personal
       </h1>
-      <p className="font-Fira text-navPrimary pt-8 font-medium leading-9">
-        /* Hey there! I'm Tornike Butiashvili, a 21-year-old individual hailing
-        from the captivating city of Rustavi, Georgia. I consider myself a
-        spirited and goal-driven person, consistently working towards my
-        objectives with zeal. Fueled by unwavering determination, I actively
-        pursue my aspirations, ensuring that I stay focused on the path to
-        success. As proof of my dedication, I'm thrilled to share that I've
-        achieved this level of proficiency in just a few short months. I warmly
-        invite you to explore my diverse portfolio and skills, offering a vivid
-        snapshot of my capabilities and the exciting journey that has brought me
-        to where I am today. */
+      <p className="font-Fira text-navPrimary pt-8 font-medium leading-9 pr-2">
+        /* In my brief journey as a junior software developer, I've exhibited a
+        remarkable adaptability to the dynamic tech landscape. Over the past few
+        months, I've honed my skills through a proactive approach to learning,
+        consistently seeking out new technologies and methodologies. Embracing
+        challenges, I've cultivated a flexible mindset, enabling me to swiftly
+        grasp and implement novel concepts. Through hands-on projects and
+        collaborative experiences, I've not only deepened my understanding of
+        programming languages but also enhanced my problem-solving abilities.
+        This journey has not only solidified my technical foundation but has
+        also instilled in me a passion for lifelong learning.*/
       </p>
     </div>
   );
