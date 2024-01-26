@@ -1,6 +1,6 @@
 const AboutPersonal: React.FC = () => {
   return (
-    <div className="font-Fira bg-MainPrimary pl-3 pt-3 w-[50%] h-full">
+    <div className="font-Fira bg-MainPrimary pl-3 pt-3 w-[50%] h-full border-r border-NavBorderColor">
       <h1 className="text-navPrimary text-base">
         <span className="text-white font-medium">// info </span> / personal
       </h1>

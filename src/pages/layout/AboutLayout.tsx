@@ -11,6 +11,7 @@ import {
   recoilPersonal,
   recoilProfessional,
 } from "../../components/recoilstate/state";
+import AboutSkills from "../../components/about/AboutSkills";
 
 const AboutLayout: React.FC = () => {
   const aboutPersonalToggle = useRecoilValue(recoilPersonal);
@@ -22,8 +23,11 @@ const AboutLayout: React.FC = () => {
         <AboutAside />
         <div className="flex flex-col">
           <AboutSecondNav />
-          {aboutPersonalToggle ? <AboutPersonal /> : ""}
-          {aboutProffToggle ? <AboutProffesional /> : ""}
+          <div className="flex h-full">
+            {aboutPersonalToggle ? <AboutPersonal /> : ""}
+            {aboutProffToggle ? <AboutProffesional /> : ""}
+            <AboutSkills />
+          </div>
         </div>
       </div>
       <Footer />
