@@ -7,9 +7,9 @@ const ProjectsSidebar: React.FC = () => {
     setShowHide((value) => !value);
   };
   return (
-    <div>
+    
       <div
-        className="text-white font-Fira border border-NavBorderColor w-[18%]
+        className="text-white font-Fira border border-NavBorderColor min-w-[16%]
        min-h-[80vh] bg-MainPrimary"
       >
         <div className="border-b border-NavBorderColor">
@@ -53,7 +53,7 @@ const ProjectsSidebar: React.FC = () => {
           )}
         </div>
       </div>
-    </div>
+    
   );
 };
 
